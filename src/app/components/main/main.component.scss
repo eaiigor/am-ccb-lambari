@@ -1,0 +1,66 @@
+tr {
+    background-color: red;
+}
+
+
+::ng-deep .fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
+
+::ng-deep .fc-theme-standard .fc-scrollgrid tr:last-child td {
+    border-bottom: none;
+}
+
+::ng-deep .fc-theme-standard .fc-scrollgrid tr td:last-child {
+    border-right: none;
+}
+
+::ng-deep .fc-theme-standard .fc-scrollgrid tr th:last-child {
+    border-right: none;
+}
+
+::ng-deep .fc-col-header-cell-cushion {
+    text-decoration: none;
+    color: #000;
+}
+
+::ng-deep .fc .fc-daygrid-day-number {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+::ng-deep .fc-direction-ltr .fc-button-group>.fc-button {
+    border-radius: 18px;
+    border: 2px solid #e2e2e2;
+    background-color: #fff;
+    color: #acacac;
+}
+
+::ng-deep .fc-direction-ltr .fc-button-group>.fc-button:active {
+    color: #fff;
+}
+
+::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    background-color: #c4c4c4;
+    border: 2px solid #c4c4c4;
+}
+
+::ng-deep .fc-direction-ltr .fc-button-group > .fc-button:active {
+    background-color: #fff;
+    border-color: #e2e2e2;
+    color: #c4c4c4;
+}
+
+::ng-deep .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+    background-color: #fff;
+    border: 2px solid #e2e2e2;
+    color: #5e5e5e;
+}
+
+::ng-deep .fc-direction-ltr .fc-toolbar > * > :not(:first-child):active {
+    background-color: #fff;
+    border: 2px solid #e2e2e2;
+    color: #5e5e5e;
+}

@@ -4,7 +4,7 @@ $tertiary-color: #fff;
 
 $text-color: #05050a;
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,3 +14,15 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: $primary-color;
 }
+
+/* .fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+} */
+
+/* .fc-theme-standard .fc-scrollgrid tr:last-child td {
+    border-bottom: none;
+}
+
+.fc-theme-standard .fc-scrollgrid tr td:last-child {
+    border-right: none;
+} */
