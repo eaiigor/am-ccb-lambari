@@ -11,8 +11,10 @@ $text-color: #05050a;
 
 body {
     font-weight: 400;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Nunito", sans-serif;
     background-color: $primary-color;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 
 /* .fc-theme-standard .fc-scrollgrid {
