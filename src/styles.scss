@@ -1,8 +1,5 @@
-$primary-color: #ededed;
-$secondary-color: #d6dae5;
-$tertiary-color: #fff;
+@import 'styles/cores.scss';
 
-$text-color: #05050a;
 
 * {
     margin: 0;
@@ -12,19 +9,21 @@ $text-color: #05050a;
 body {
     font-weight: 400;
     font-family: "Nunito", sans-serif;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     font-style: normal;
     font-optical-sizing: auto;
+    color: $text-color;
 }
 
-/* .fc-theme-standard .fc-scrollgrid {
-    border: none !important;
-} */
-
-/* .fc-theme-standard .fc-scrollgrid tr:last-child td {
-    border-bottom: none;
+.card {
+    border: none;
+    -webkit-box-shadow: -2px 0px 27px -9px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: -2px 0px 27px -9px rgba(0, 0, 0, 0.41);
+    box-shadow: -2px 0px 27px -9px rgba(0, 0, 0, 0.41)
 }
 
-.fc-theme-standard .fc-scrollgrid tr td:last-child {
-    border-right: none;
-} */
+.c-title {
+    color: #AAAAAB;
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}

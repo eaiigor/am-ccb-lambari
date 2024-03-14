@@ -1,7 +1,46 @@
-tr {
-    background-color: red;
+@import '/src/styles/cores.scss';
+
+.py-7 {
+    padding: 4.2rem 0 10rem 0;
 }
 
+.h1-title {
+    font-size: 5rem;
+}
+
+.h2-title {
+    font-size: 2.3rem;
+}
+
+.h4-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.marquee-section {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
+
+.comunicationo-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.marquee-text {
+    font-style: italic;
+    font-size: 16px;
+}
 
 ::ng-deep .fc-theme-standard .fc-scrollgrid {
     border: none;
