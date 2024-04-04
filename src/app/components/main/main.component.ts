@@ -24,6 +24,8 @@ export class MainComponent implements OnInit {
     this.eventos = this.convertToEventos(eventsData);
 
     this.proximosEventos = this.getProximosEventos(this.eventos, 5);
+
+    console.log(this.eventos)
   }
 
   convertToCalendarEvents(data: EventosData[]): CalendarOptions {

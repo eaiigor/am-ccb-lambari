@@ -175,7 +175,7 @@ export const eventsData = [
     },
     {
         id: 12,
-        nome: "Ensaio Locall",
+        nome: "Ensaio Local",
         localidade: "Sítio Piripal",
         encarregadoLocal: "Wagner Luiz Eugenio",
         contatoLocal: "(35) 9 2001-8099",

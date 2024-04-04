@@ -18,8 +18,12 @@ export class HeaderComponent implements OnInit {
     this.eventosData = eventsData;
   }
 
-  irParaDetalhes(id: number) {
+  irParaDetalhes(id: number): void {
     this.router.navigate(['/detalhes-localidade', id]);
+  }
+
+  irParaPrincipal(): void {
+    this.router.navigate(['']);
   }
 
 }

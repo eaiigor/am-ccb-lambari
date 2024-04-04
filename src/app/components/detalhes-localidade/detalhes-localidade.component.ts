@@ -11,6 +11,6 @@ export class DetalhesLocalidadeComponent {
   @Input() localidadeSelecionada: Evento;
 
   constructor() {
-    this.localidadeSelecionada = {} as Evento; // Ou inicialize com um valor válido
+    this.localidadeSelecionada = {} as Evento;
   }
 }
