@@ -1,6 +1,3 @@
-<!-- <div>
-    <full-calendar [options]="calendarOptions"></full-calendar>
-</div> -->
 <div class="p-5">
     <div class="w-100 py-7">
         
@@ -18,7 +15,15 @@
                     <span class="comunicationo-text">Comunicado importante</span>
                     <hr>
                 </div>
-                <marquee class="marquee-text" scrollamount="12">Ensaio local Alto da Boa Vista - 18/03/2024</marquee>
+                <marquee class="marquee-text" scrollamount="12">
+                    <ng-container *ngFor="let evento of proximosEventos">
+                      {{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </ng-container>
+                  </marquee>
                 <hr>
             </div>
         </div>
@@ -29,30 +34,30 @@
 
         <div class="d-flex flex-column" style="width: 30%;">
             <h3 class="c-title">Próximos Eventos</h3>
-            <div class="card" style="width: 100%;">
+            <div *ngFor="let evento of proximosEventos" class="card mb-4" style="width: 100%;">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex flex-column justify-content-between">
                             <div>
-                                <h5 class="card-title">Ensaio Local</h5>
-                                <h6 class="card-subtitle text-body-secondary mb-1">Alto do Boa Vista</h6>
-                                <h6 class="card-subtitle text-body-secondary">Encarregado: Eliseu Teixeira</h6>
+                                <h5 class="card-title">{{ evento.nomeEvento }}</h5>
+                                <h6 class="card-subtitle text-body-secondary mb-1">{{ evento.nomeLocalidade }}</h6>
+                                <h6 class="card-subtitle text-body-secondary">{{ evento.encarregadoLocal ?? evento.encarregadoRegional }}</h6>
                             </div>
     
                             <div class="d-flex flex-column">
                                 <a href="#" class="card-link">Endereço google</a>
-                                <span href="#" class="card-link m-0">Segunda-feira - 19:30</span>
+                                <span href="#" class="card-link m-0">{{ evento.dataEvento | date:'EEEE - dd/MM/yyyy HH:mm' }}</span>
                             </div>
                         </div>
     
                         <div>
-                            <img class="image-card" src="assets/igrejas/alto-do-boa-vista.jpg" alt="Alto do Boa Vista">
+                            <img class="image-card" [src]="evento.imgIgreja" [alt]="evento.nomeLocalidade">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mt-4" style="width: 100%;">
+            <!-- <div class="card mt-4" style="width: 100%;">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex flex-column justify-content-between">
@@ -73,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
         </div>
 

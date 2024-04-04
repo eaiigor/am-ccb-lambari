@@ -3,10 +3,10 @@ export interface Evento {
     nomeEvento: string,
     nomeLocalidade: string,
     linkEndereco: string,
-    dataEvento: string,
+    dataEvento: Date,
     imgIgreja: string,
     idIgreja: number,
-    encarregadoLocal: string,
+    encarregadoLocal?: string,
     encarregadoRegional: string,
     contatoLocal: string
 }

@@ -23,8 +23,9 @@
                         Ensaio Local
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li *ngFor="let localidade of eventosData">
+                            <a class="dropdown-item">{{ localidade.localidade }}</a>
+                        </li>
                     </ul>
                 </li>
             </ul>

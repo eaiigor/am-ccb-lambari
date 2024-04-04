@@ -22,7 +22,7 @@ export const eventsData = [
         localidade: "Barrocada",
         contatoLocal: "(35) 9 9142-4590",
         encarregadoRegional: "Rodrigo Lemes",
-        imgIgreja:"assets/igrejas/barrpcadaa.jpg",
+        imgIgreja:"assets/igrejas/barrocada.jpg",
         diasDeEvento: [
             "2024-03-16T19:30:00",
             "2024-06-21T19:30:00",

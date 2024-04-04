@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CalendarOptions } from '@fullcalendar/core'; // useful for typechecking
+import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import allLocales from '@fullcalendar/core/locales-all';
 import timeGridPlugin from '@fullcalendar/timegrid'
-import listPlugin from '@fullcalendar/list'
 import { eventsData } from 'src/app/data/events.data';
 import { Evento } from 'src/app/interfaces/evento.model';
+import { EventosData } from 'src/app/interfaces/eventosData.model';
 
 @Component({
   selector: 'app-main',
@@ -16,14 +16,17 @@ export class MainComponent implements OnInit {
 
   calendarOptions: CalendarOptions = {};
   eventos: Evento[] = [];
+  proximosEventos: Evento[] = [];
   
   ngOnInit(): void {
     this.calendarOptions = this.convertToCalendarEvents(eventsData);
     
     this.eventos = this.convertToEventos(eventsData);
+
+    this.proximosEventos = this.getProximosEventos(this.eventos, 5);
   }
 
-  convertToCalendarEvents(data: any[]): CalendarOptions {
+  convertToCalendarEvents(data: EventosData[]): CalendarOptions {
     const events = data.flatMap(event => 
       event.diasDeEvento.map((date: string) => ({
         idIgreja: event.id,
@@ -46,7 +49,7 @@ export class MainComponent implements OnInit {
     };
   }
 
-  convertToEventos(data: any[]): Evento[] {
+  convertToEventos(data: EventosData[]): Evento[] {
     let initId = 1;
 
     return data.flatMap((event, index) => {
@@ -55,14 +58,30 @@ export class MainComponent implements OnInit {
         nomeEvento: event.nome,
         nomeLocalidade: event.localidade,
         linkEndereco: '',
-        dataEvento: date,
+        dataEvento: new Date(date),
         imgIgreja: event.imgIgreja,
         idIgreja: event.id,
-        localidade: event.localidade,
         encarregadoLocal: event.encarregadoLocal,
-        contato: event.contatoLocal,
+        encarregadoRegional: event.encarregadoRegional,
+        contatoLocal: event.contatoLocal,
       }));
     });
   }
 
+  getProximosEventos(eventos: Evento[], quantidade: number): Evento[] {
+    const dataAtual = new Date();
+
+    // Ordenar os eventos pela data do evento
+    eventos.sort((a, b) => a.dataEvento.getTime() - b.dataEvento.getTime());
+
+    // Filtrar os próximos eventos
+    const proximosEventos = eventos.filter(evento => evento.dataEvento.getTime() >= dataAtual.getTime());
+
+    // Retornar apenas a quantidade especificada de próximos eventos
+    return proximosEventos.slice(0, quantidade);
+  }
+
+  capitalizeFirstLetter(string: string): string {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 }
