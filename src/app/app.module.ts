@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { DetalhesLocalidadeComponent } from './components/detalhes-localidade/detalhes-localidade.component';
 
 registerLocaleData(localePt);
 
@@ -17,7 +18,8 @@ registerLocaleData(localePt);
     AppComponent,
     MainComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DetalhesLocalidadeComponent
   ],
   imports: [
     BrowserModule,

@@ -8,13 +8,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex align-items-center gap-3 me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-account-music-outline"></i>Reuniões Musicais</a>
+                    <a class="nav-link active" aria-current="page" href="#"><i
+                            class="mdi mdi-account-music-outline"></i>Reuniões Musicais</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-calendar-text-outline"></i>Calendário Musical</a>
+                    <a class="nav-link active" aria-current="page" href="#"><i
+                            class="mdi mdi-calendar-text-outline"></i>Calendário Musical</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><img src="assets/regional-icon.png" alt="regional-icon">Ensaio Regional</a>
+                    <a class="nav-link active" aria-current="page" href="#"><img src="assets/regional-icon.png"
+                            alt="regional-icon">Ensaio Regional</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -24,13 +27,14 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li *ngFor="let localidade of eventosData">
-                            <a class="dropdown-item">{{ localidade.localidade }}</a>
+                            <a class="dropdown-item" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade }}</a>
                         </li>
                     </ul>
                 </li>
             </ul>
             <form class="d-flex">
-                <button class="btn btn-outline-dark" type="submit"><i class="mdi mdi-contacts-outline mr2"></i><span style="margin-left: 4px;">Contatos</span></button>
+                <button class="btn btn-outline-dark" type="submit"><i class="mdi mdi-contacts-outline mr2"></i><span
+                        style="margin-left: 4px;">Contatos</span></button>
             </form>
         </div>
     </div>
