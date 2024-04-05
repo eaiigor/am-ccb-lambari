@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { eventsData } from 'src/app/data/events.data';
 import { EventosData } from 'src/app/interfaces/eventosData.model';
+import { EventoService } from 'src/app/service/eventos.service';
 
 @Component({
   selector: 'app-header',
@@ -12,14 +12,22 @@ export class HeaderComponent implements OnInit {
 
   eventosData: EventosData[] = [];
 
-  constructor(private router: Router) { }
-  
+  constructor(
+    private router: Router,
+    private eventoService: EventoService,
+  ) { }
+
   ngOnInit(): void {
-    this.eventosData = eventsData;
+    this.carregar();
   }
 
-  irParaDetalhes(id: number): void {
-    this.router.navigate(['/detalhes-localidade', id]);
+  carregar(): void {
+    this.eventosData = this.eventoService.receberTodosEventos();
+  }
+
+  irParaDetalhes(localidade: EventosData): void {
+
+    window.location.replace(`/detalhes-localidade/${localidade.id}`);
   }
 
   irParaPrincipal(): void {

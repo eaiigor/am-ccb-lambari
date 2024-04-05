@@ -3,9 +3,9 @@ import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import allLocales from '@fullcalendar/core/locales-all';
 import timeGridPlugin from '@fullcalendar/timegrid'
-import { eventsData } from 'src/app/data/events.data';
 import { Evento } from 'src/app/interfaces/evento.model';
 import { EventosData } from 'src/app/interfaces/eventosData.model';
+import { EventoService } from 'src/app/service/eventos.service';
 
 @Component({
   selector: 'app-main',
@@ -16,16 +16,25 @@ export class MainComponent implements OnInit {
 
   calendarOptions: CalendarOptions = {};
   eventos: Evento[] = [];
+  eventosData: EventosData[] = [];
   proximosEventos: Evento[] = [];
+
+  constructor(
+    private eventoService: EventoService,
+  ) { }
   
   ngOnInit(): void {
-    this.calendarOptions = this.convertToCalendarEvents(eventsData);
+    this.carregar();
+
+    this.calendarOptions = this.convertToCalendarEvents(this.eventosData);
     
-    this.eventos = this.convertToEventos(eventsData);
+    this.eventos = this.convertToEventos(this.eventosData);
 
     this.proximosEventos = this.getProximosEventos(this.eventos, 5);
+  }
 
-    console.log(this.eventos)
+  carregar(): void {
+    this.eventosData = this.eventoService.receberTodosEventos();
   }
 
   convertToCalendarEvents(data: EventosData[]): CalendarOptions {
@@ -81,9 +90,5 @@ export class MainComponent implements OnInit {
 
     // Retornar apenas a quantidade especificada de próximos eventos
     return proximosEventos.slice(0, quantidade);
-  }
-
-  capitalizeFirstLetter(string: string): string {
-    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 }

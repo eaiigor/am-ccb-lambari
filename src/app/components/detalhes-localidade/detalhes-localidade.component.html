@@ -1,1 +1,27 @@
-<p>detalhes-localidade works!</p>
+<div class="p-5">
+    <div class="card w-100 d-flex justify-content-center" style="min-height: 46rem;">
+        <div class="row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img [src]="evento.imgIgreja" [alt]="evento.localidade" class="img-fluid evento-image">
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0 d-flex flex-column gap-3">
+                <div>
+                    {{ evento.localidade }}
+                </div>
+                <div>
+                    {{ evento.encarregadoLocal }}
+                </div>
+                <div>
+                    {{ evento.contatoLocal }}
+                </div>
+                <div>
+                    {{ evento.encarregadoRegional }}
+                </div>
+               <!--  <div>
+                    {{ evento }}
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

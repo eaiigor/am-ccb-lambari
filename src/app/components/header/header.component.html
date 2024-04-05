@@ -27,7 +27,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li *ngFor="let localidade of eventosData">
-                            <a class="dropdown-item" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade }}</a>
+                            <a class="dropdown-item" (click)="irParaDetalhes(localidade)">{{ localidade.localidade }}</a>
                         </li>
                     </ul>
                 </li>

@@ -1,0 +1,11 @@
+.custom-img-size {
+    max-width: 80%;
+    max-height: 45rem;
+}
+
+.evento-image {
+    max-width: 100%; /* Isso garantirá que a imagem não ultrapasse a largura do contêiner */
+    max-height: 600px; /* Altere para o valor desejado para o tamanho máximo vertical */
+    object-fit: cover; /* Isso fará com que a imagem mantenha sua proporção e preencha o espaço disponível */
+    border-radius: 16px;
+}
