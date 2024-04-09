@@ -4,9 +4,55 @@
 }
 
 .evento-image {
-    max-width: 70%;
+    max-width: 65%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center top;
     border-radius: 16px;
+}
+
+.bl {
+    border-left: solid 4px #5a5a5a;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-details {
+    font-size: 2.4rem;
+    color: #5a5a5a;
+    font-weight: 400;
+}
+
+.sub-title-details {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+.informations {
+    font-size: 1.3rem;
+    color: #414141;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+    width: calc(22% - 25px);
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    border-radius: 8px;
+}
+
+.fs-22 {
+    font-size: 22px;
 }

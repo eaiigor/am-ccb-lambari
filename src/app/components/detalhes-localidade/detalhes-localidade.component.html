@@ -5,22 +5,36 @@
                 <img [src]="evento.imgIgreja" [alt]="evento.localidade" class="img-fluid evento-image">
             </div>
 
-            <div class="col-md-6 mt-4 mt-md-0 d-flex flex-column gap-3">
-                <div>
-                    {{ evento.localidade }}
+            <div class="col-md-6 mt-4 mt-md-0 d-flex flex-column gap-5">
+                <div class="bl">
+                    <h1 class="title-details">{{ evento.localidade }}</h1>
+                    <h5 class="sub-title-details">Cidade: {{ evento.cidade }}</h5>
                 </div>
+
                 <div>
-                    {{ evento.encarregadoLocal }}
+                    <div *ngIf="evento.encarregadoLocal">
+                        <i class="mdi mdi-account-tie-outline fs-22"></i><span class="informations"> Encarregado local: {{ evento.encarregadoLocal }}</span>
+                    </div>
+                    <div>
+                        <i class="mdi mdi-account-tie fs-22"></i><span class="informations"> Encarregado regional: {{ evento.encarregadoRegional }}</span>
+                    </div>
+                    <div>
+                        <i class="mdi mdi-phone fs-22"></i><span class="informations"> Contato local: {{ evento.contatoLocal }}</span>
+                    </div>
                 </div>
+
                 <div>
-                    {{ evento.contatoLocal }}
+                    <div>
+                        <span class="informations">{{ evento.diasEmFrase }}</span>
+                    </div>
+    
+                    <div class="grid-container mt-3">
+                        <div class="grid-item" *ngFor="let data of evento.diasDeEvento">
+                            <div>{{ data | date:'dd/MM/yyyy HH:mm' }}</div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    {{ evento.encarregadoRegional }}
-                </div>
-               <!--  <div>
-                    {{ evento }}
-                </div> -->
+
             </div>
         </div>
     </div>

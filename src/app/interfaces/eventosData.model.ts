@@ -7,4 +7,6 @@ export interface EventosData {
     encarregadoRegional: string,
     imgIgreja: string,
     diasDeEvento: string[],
+    diasEmFrase: string,
+    cidade: string
 }

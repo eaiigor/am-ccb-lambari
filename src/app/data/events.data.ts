@@ -14,7 +14,9 @@ export const eventsData = [
             "2024-07-08T19:30:00",
             "2024-09-09T19:30:00",
             "2024-11-11T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 2° Segunda dos meses ímpares as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 2,
@@ -27,7 +29,9 @@ export const eventsData = [
             "2024-03-16T19:30:00",
             "2024-06-21T19:30:00",
             "2024-09-20T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Mar/Jun/Set as 19:30",
+        cidade: "Jesuânia",
     },
     {
         id: 3,
@@ -44,7 +48,9 @@ export const eventsData = [
             "2024-07-15T19:30:00",
             "2024-09-16T19:30:00",
             "2024-11-18T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 3° Segunda dos meses ímpares as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 4,
@@ -59,7 +65,9 @@ export const eventsData = [
             "2024-06-17T19:30:00",
             "2024-08-19T19:30:00",
             "2024-12-16T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 3° Segunda dos meses Fev/Jun/Ago/Dez as 19:30",
+        cidade: "Jesuânia",
     },
     {
         id: 5,
@@ -76,7 +84,9 @@ export const eventsData = [
             "2024-07-27T17:00:00",
             "2024-09-28T17:00:00",
             "2024-11-23T17:00:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 4° Sábados meses impar as 17:00",
+        cidade: "Lambari",
     },
     {
         id: 6,
@@ -91,7 +101,9 @@ export const eventsData = [
             "2024-03-25T19:30:00",
             "2024-07-22T19:30:00",
             "2024-11-25T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 4° segunda-feira dos meses Jan/Mar/Jul/Nov 19:30",
+        cidade: "Olímpo de Noronha",
     },
     {
         id: 7,
@@ -108,7 +120,9 @@ export const eventsData = [
             "2024-08-05T19:30:00",
             "2024-10-07T19:30:00",
             "2024-12-02T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 1° Segundas-feiras dos meses pares as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 8,
@@ -125,7 +139,9 @@ export const eventsData = [
             "2024-07-07T16:00:00",
             "2024-09-01T16:00:00",
             "2024-11-03T16:00:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 1° Domingo dos meses ímpares as 16:00",
+        cidade: "Lambari",
     },
     {
         id: 9,
@@ -142,7 +158,9 @@ export const eventsData = [
             "2024-07-14T16:00:00",
             "2024-09-08T16:00:00",
             "2024-11-10T16:00:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 2° Domingo dos meses ímpares as 16:00",
+        cidade: "Lambari",
     },
     {
         id: 10,
@@ -154,7 +172,9 @@ export const eventsData = [
         diasDeEvento: [
             "2024-02-16T19:30:00",
             "2024-10-18T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Fev/Out as 19:30",
+        cidade: "Jesuânia",
     },
     {
         id: 11,
@@ -171,7 +191,9 @@ export const eventsData = [
             "2024-08-04T16:00:00",
             "2024-10-06T16:00:00",
             "2024-12-01T16:00:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 1° Domingo dos meses pares as 16:00",
+        cidade: "Lambari",
     },
     {
         id: 12,
@@ -187,7 +209,9 @@ export const eventsData = [
             "2024-07-29T19:30:00",
             "2024-09-30T19:30:00",
             "2024-12-30T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: Toda 5° segunda-feira as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 13,
@@ -201,7 +225,9 @@ export const eventsData = [
             "2024-01-21T16:00:00",
             "2024-05-19T16:00:00",
             "2024-09-15T16:00:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 3° Domingo dos meses Jan/Mai/Set 16:00",
+        cidade: "Lambari",
     },
     {
         id: 14,
@@ -217,7 +243,9 @@ export const eventsData = [
             "2024-08-26T19:30:00",
             "2024-10-28T19:30:00",
             "2024-12-23T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 4° Segunda dos meses pares as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 15,
@@ -234,7 +262,9 @@ export const eventsData = [
             "2024-08-12T19:30:00",
             "2024-10-14T19:30:00",
             "2024-12-09T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 2° Segunda dos meses pares as 19:30",
+        cidade: "Lambari",
     },
     {
         id: 16,
@@ -251,6 +281,8 @@ export const eventsData = [
             "2024-07-01T19:30:00",
             "2024-09-02T19:30:00",
             "2024-11-04T19:30:00"
-        ]
+        ],
+        diasEmFrase: "Dias de ensaio: 1° Segunda dos meses ímpares as 19:30",
+        cidade: "Lambari",
     }
 ]
