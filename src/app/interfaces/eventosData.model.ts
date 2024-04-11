@@ -8,5 +8,7 @@ export interface EventosData {
     imgIgreja: string,
     diasDeEvento: string[],
     diasEmFrase: string,
-    cidade: string
+    cidade: string,
+    iframeMaps: string,
+    endereco: string
 }

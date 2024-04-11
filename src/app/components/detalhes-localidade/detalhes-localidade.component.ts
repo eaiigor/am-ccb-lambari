@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Evento } from 'src/app/interfaces/evento.model';
 import { EventosData } from 'src/app/interfaces/eventosData.model';
@@ -12,10 +13,12 @@ import { EventoService } from 'src/app/service/eventos.service';
 export class DetalhesLocalidadeComponent {
 
   evento!: EventosData
+  safeIframerUrl: SafeResourceUrl | undefined;
 
   constructor(
     private route: ActivatedRoute,
     private eventoService: EventoService,
+    private sanitizer: DomSanitizer,
   ) { }
 
   ngOnInit(): void {
@@ -25,5 +28,11 @@ export class DetalhesLocalidadeComponent {
       this.evento = this.eventoService.receberEventoPorId(parseInt(idEvento, 10));
       console.log(this.evento)
     }
+
+    this.safeIframerUrl = this.getSafeTrailerUrl(this.evento?.iframeMaps || '');
+  }
+
+  getSafeTrailerUrl(trailerLink: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(trailerLink);
   }
 }

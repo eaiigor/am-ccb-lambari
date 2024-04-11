@@ -76,7 +76,9 @@ export class MainComponent implements OnInit {
         encarregadoRegional: event.encarregadoRegional,
         contatoLocal: event.contatoLocal,
         diasEmFrase: event.diasEmFrase,
-        cidade: event.cidade
+        cidade: event.cidade,
+        iframeMaps: event.iframeMaps,
+        endereco: event.endereco
       }));
     });
   }

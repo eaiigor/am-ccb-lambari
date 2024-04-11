@@ -1,21 +1,32 @@
-.custom-img-size {
-    max-width: 80%;
-    max-height: 45rem;
+.p-out-card {
+    padding: 3rem 10rem;
+}
+
+.p-card {
+    padding: 4rem;
 }
 
 .evento-image {
-    max-width: 65%;
+    max-width: 70%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center top;
     border-radius: 16px;
 }
 
+.iframe-s {
+    min-width: 65%;
+    height: 65% !important;
+    border-radius: 16px;
+    border: 0;
+}
+
 .bl {
-    border-left: solid 4px #5a5a5a;
+    border-left: solid 4px #666666;
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .title-details {
@@ -44,15 +55,27 @@
 }
 
 .grid-item {
-    border: 1px solid #ccc;
+    border: 1px solid #989898;
     padding: 10px 0;
     text-align: center;
-    width: calc(22% - 25px);
+    width: calc(32% - 25px);
     box-sizing: border-box;
     margin-bottom: 1px;
     border-radius: 8px;
+    background-color: #fafafa;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.grid-item:hover {
+    background-color: #fff;
+
 }
 
 .fs-22 {
     font-size: 22px;
+}
+
+.pr-6 {
+    padding-right: 6rem;
 }
