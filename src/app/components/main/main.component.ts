@@ -95,4 +95,9 @@ export class MainComponent implements OnInit {
     // Retornar apenas a quantidade especificada de próximos eventos
     return proximosEventos.slice(0, quantidade);
   }
+
+  irParaDetalhes(idLocalidade: number): void {
+
+    window.location.replace(`/detalhes-localidade/${idLocalidade}`);
+  }
 }

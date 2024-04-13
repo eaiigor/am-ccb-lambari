@@ -50,6 +50,18 @@ hr {
     object-position: center;
 }
 
+.cp {
+    cursor: pointer;
+}
+
+.card-e {
+    transition: transform 0.3s ease;
+}
+
+.card-e:hover {
+    transform: scale(1.05);
+}
+
 ::ng-deep .fc-theme-standard .fc-scrollgrid {
     border: none;
 }

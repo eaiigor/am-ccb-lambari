@@ -34,8 +34,8 @@
 
         <div class="d-flex flex-column" style="width: 30%;">
             <h3 class="c-title">Próximos Eventos</h3>
-            <div *ngFor="let evento of proximosEventos" class="card mb-4" style="width: 100%;">
-                <div class="card-body">
+            <div *ngFor="let evento of proximosEventos" class="card card-e mb-4" style="width: 100%;">
+                <div class="card-body cp" (click)="irParaDetalhes(evento.idIgreja)">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex flex-column justify-content-between">
                             <div>
@@ -57,29 +57,6 @@
                 </div>
             </div>
 
-            <!-- <div class="card mt-4" style="width: 100%;">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-column justify-content-between">
-                            <div>
-                                <h5 class="card-title">Ensaio Local</h5>
-                                <h6 class="card-subtitle text-body-secondary mb-1">Alto do Boa Vista</h6>
-                                <h6 class="card-subtitle text-body-secondary">Encarregado: Eliseu Teixeira</h6>
-                            </div>
-    
-                            <div class="d-flex flex-column">
-                                <a href="#" class="card-link">Endereço google</a>
-                                <span href="#" class="card-link m-0">Segunda-feira - 19:30</span>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <img class="image-card" src="assets/igrejas/alto-do-boa-vista.jpg" alt="Alto do Boa Vista">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            
         </div>
 
         <div style="width: 70%;">
