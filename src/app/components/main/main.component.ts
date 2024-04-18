@@ -31,6 +31,8 @@ export class MainComponent implements OnInit {
     this.eventos = this.convertToEventos(this.eventosData);
 
     this.proximosEventos = this.getProximosEventos(this.eventos, 5);
+
+    this.verificarIdCalendario();
   }
 
   carregar(): void {
@@ -97,7 +99,15 @@ export class MainComponent implements OnInit {
   }
 
   irParaDetalhes(idLocalidade: number): void {
-
     window.location.replace(`/detalhes-localidade/${idLocalidade}`);
+  }
+
+  verificarIdCalendario() :void {
+    if (window.location.pathname === '/' && window.location.hash === '#calendario-musical') {
+      const elemento = document.getElementById('calendario-musical');
+      if (elemento) {
+        elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   }
 }

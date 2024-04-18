@@ -317,4 +317,20 @@ export const eventsData = [
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.2942137296723!2d-45.361517588019375!3d-21.961668479847887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb19ffa5d146e7%3A0xb5927ae8a917be8f!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Vista%20Verde%20II!5e0!3m2!1spt-BR!2sus!4v1712859609697!5m2!1spt-BR!2sus",
         endereco: "R. Dez, 19, Lambari - MG, 37480-000, Brasil"
     },
+    {
+        id: 17,
+        nome: "Ensaio Regional",
+        localidade: "Bosque do Lago - Central",
+        contatoLocal: "(35) 9 9142-4590",
+        encarregadoRegional: "Rodrigo Lemes",
+        imgIgreja:"assets/igrejas/central-lambari.jpg",
+        diasDeEvento: [
+            "2024-05-26T09:30:00",
+            "2024-11-24T09:30:00"
+        ],
+        diasEmFrase: "Dias de ensaio: 4° Domingos dos meses de Maio e Novembro as 09:30",
+        cidade: "Lambari",
+        iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3699.7132197480837!2d-45.340406!3d-21.983967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb19b5a2de4b15%3A0xee221907c3ef6766!2sAv.%20Get%C3%BAlio%20Vargas%2C%201083%2C%20Lambari%20-%20MG%2C%2037480-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1712848662969!5m2!1spt-BR!2sus",
+        endereco: "Av. Getúlio Vargas, 1083, Lambari - MG, 37480-000, Brasil"
+    },
 ]

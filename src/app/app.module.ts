@@ -10,6 +10,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { DetalhesLocalidadeComponent } from './components/detalhes-localidade/detalhes-localidade.component';
+import { ReunioesMusicaisComponent } from './components/reunioes-musicais/reunioes-musicais.component';
 
 registerLocaleData(localePt);
 
@@ -19,7 +20,8 @@ registerLocaleData(localePt);
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    DetalhesLocalidadeComponent
+    DetalhesLocalidadeComponent,
+    ReunioesMusicaisComponent
   ],
   imports: [
     BrowserModule,

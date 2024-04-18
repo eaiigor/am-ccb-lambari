@@ -25,13 +25,19 @@ export class HeaderComponent implements OnInit {
     this.eventosData = this.eventoService.receberTodosEventos();
   }
 
-  irParaDetalhes(localidade: EventosData): void {
+  irParaDetalhes(idLocalidade: number): void {
 
-    window.location.replace(`/detalhes-localidade/${localidade.id}`);
+    window.location.replace(`/detalhes-localidade/${idLocalidade}`);
   }
 
-  irParaPrincipal(): void {
-    this.router.navigate(['']);
+  irParaTela(rota: string): void {
+    this.router.navigate([rota]);
   }
 
+  irParaCalendarioMusical(): void {
+    const elemento = document.getElementById('calendario-musical');
+    if (elemento) {
+      elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
