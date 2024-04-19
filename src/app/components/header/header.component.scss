@@ -5,8 +5,8 @@
     box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.11);
     -webkit-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.11);
-    
-    background-color: $tertiary-color  !important;
+
+    background-color: $tertiary-color !important;
 
     .mdi-music-clef-bass {
         font-size: 30px;
@@ -14,20 +14,29 @@
 
     .logo-image {
         width: 4.2rem;
+        height: 3rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
         margin-right: 1rem;
         cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .logo-image:hover {
+        transform: scale(1.05);
     }
 
     .navbar-nav .nav-link {
         position: relative;
         text-decoration: none;
     }
-    
+
     .navbar-nav .nav-item:not(.dropdown) .nav-link {
         position: relative;
         text-decoration: none;
     }
-    
+
     .navbar-nav .nav-item:not(.dropdown) .nav-link::after {
         content: '';
         position: absolute;
@@ -35,10 +44,10 @@
         left: 0;
         width: 0;
         height: 2px;
-        background-color: $text-details; /* Defina a cor do sublinhado */
-        transition: width 0.3s ease; /* Adiciona uma transição suave */
+        background-color: $text-details;
+        transition: width 0.3s ease;
     }
-    
+
     .navbar-nav .nav-item:not(.dropdown) .nav-link:hover::after {
         width: 100%;
     }
@@ -47,7 +56,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     .navbar-nav .nav-item i {
         font-size: 22px;
         margin-right: 5px;

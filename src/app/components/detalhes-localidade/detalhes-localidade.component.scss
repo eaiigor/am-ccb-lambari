@@ -1,20 +1,12 @@
-.p-out-card {
-    padding: 3rem 10rem;
-}
-
-.p-card {
-    padding: 4rem;
-}
-
 .evento-image {
     max-width: 70%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center top;
     border-radius: 16px;
-    -webkit-box-shadow: 0px 4px 41px -19px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 41px -19px rgba(0,0,0,0.75);
-box-shadow: 0px 4px 41px -19px rgba(0,0,0,0.75);    
+    -webkit-box-shadow: 0px 4px 41px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 41px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 41px -19px rgba(0, 0, 0, 0.75);
 }
 
 .iframe-s {

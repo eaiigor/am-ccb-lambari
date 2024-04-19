@@ -26,13 +26,12 @@ export class DetalhesLocalidadeComponent {
 
     if (idEvento) {
       this.evento = this.eventoService.receberEventoPorId(parseInt(idEvento, 10));
-      console.log(this.evento)
     }
 
     this.safeIframerUrl = this.getSafeTrailerUrl(this.evento?.iframeMaps || '');
   }
 
-  getSafeTrailerUrl(trailerLink: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(trailerLink);
+  getSafeTrailerUrl(safeLink: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(safeLink);
   }
 }
