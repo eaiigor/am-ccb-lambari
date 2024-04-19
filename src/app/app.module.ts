@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { DetalhesLocalidadeComponent } from './components/detalhes-localidade/detalhes-localidade.component';
 import { ReunioesMusicaisComponent } from './components/reunioes-musicais/reunioes-musicais.component';
+import { EnsaioLocalComponent } from './components/ensaio-local/ensaio-local.component';
 
 registerLocaleData(localePt);
 
@@ -21,7 +22,8 @@ registerLocaleData(localePt);
     HeaderComponent,
     FooterComponent,
     DetalhesLocalidadeComponent,
-    ReunioesMusicaisComponent
+    ReunioesMusicaisComponent,
+    EnsaioLocalComponent
   ],
   imports: [
     BrowserModule,

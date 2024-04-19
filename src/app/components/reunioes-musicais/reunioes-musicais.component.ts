@@ -15,13 +15,13 @@ export class ReunioesMusicaisComponent implements OnInit {
   constructor(
     private eventoService: EventoService,
     private sanitizer: DomSanitizer,
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-    this.carregarReunioesMusicais();
+    this.carregarEMapearDatas();
   }
 
-  carregarReunioesMusicais(): void {
+  carregarEMapearDatas(): void {
     this.reunioesMusicais = this.eventoService.receberReunioesMusicais().map(reuniao => {
       reuniao.data = reuniao.data.map(dataStr => new Date(dataStr)) as unknown as string[];
       return reuniao;

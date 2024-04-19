@@ -1,45 +1,46 @@
 .title-f-card {
-    color: #606060;
+  color: #606060;
 }
 
 .event-text {
-    text-align: justify;
-    font-size: 18px;
+  text-align: justify;
+  font-size: 18px;
 }
 
 .c-title-rm {
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.85rem;
-    color: #606060;
-    border-left: solid 3px #606060;
-    padding-left: 1rem;
-    border-radius: 8px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.85rem;
+  color: #606060;
+  border-left: solid 3px #606060;
+  padding-left: 1rem;
+  border-radius: 8px;
 }
 
 .eventos-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens sejam distribuídos em várias linhas */
-    gap: 16px;
-  }
-  
-  .event-text-box {
-    border: 1px solid #989898;
-    padding: 5px 10px;
-    text-align: center;
-    box-sizing: border-box;
-    margin-bottom: 1px;
-    border-radius: 8px;
-    background-color: #fafafa;
-    transition: 0.3s;
-    cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px; /* Adiciona margem inferior para criar espaçamento entre as linhas */
-  }
+.event-text-box {
+  border: 1px solid #989898;
+  padding: 5px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: 0.3s;
+  cursor: default;
 
-  .event-text-box:hover {
-    background-color: #fff;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  /* Adiciona margem inferior para criar espaçamento entre as linhas */
+}
+
+.event-text-box:hover {
+  background-color: #fff;
+}

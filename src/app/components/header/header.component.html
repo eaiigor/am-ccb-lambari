@@ -20,13 +20,14 @@
                     <a class="nav-link active cursor-p" (click)="irParaDetalhes(17)" aria-current="page"><img
                             src="assets/regional-icon.png" alt="regional-icon">Ensaio Regional</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item btn-group">
+                    <a type="button" class="btn btn-light" (click)="irParaTela('ensaio-local')"><img
+                            src="assets/local-icon.png" alt="local-icon">Ensaio Local</a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/local-icon.png" alt="local-icon">
-                        Ensaio Local
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
                         <li style="cursor: pointer;" *ngFor="let localidade of eventosData">
                             <a class="dropdown-item" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade
                                 }}</a>

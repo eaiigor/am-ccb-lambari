@@ -1,0 +1,73 @@
+<div class="p-out-card">
+    <div class="card p-card w-100" style="min-height: 46rem;">
+        <div class="mb-5 d-flex gap-2 align-items-center">
+            <img class="adjust-img" src="assets/local-icon.png" alt="local-icon">
+            <h2 class="title-f-card mb-0">Ensaios Locais</h2>
+        </div>
+
+        <div class="row">
+
+            <!-- <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="cidade" *ngIf="igrejasJesuania.length > 0">
+                    <div class="d-flex gap-2 mb-3">
+                        <i class="mdi mdi-home-city-outline icon-s"></i>
+                        <h2 class="title-city">Jesuânia</h2>
+                    </div>
+                    <div class="igrejas">
+                        <div class="igreja" *ngFor="let igreja of igrejasJesuania">
+                            <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                            <p>{{ igreja.nome }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="cidade" *ngIf="igrejasLambari.length > 0">
+                <div class="d-flex gap-2 mb-3">
+                    <i class="mdi mdi-home-city-outline icon-s"></i>
+                    <h2 class="title-city">Lambari</h2>
+                </div>
+                <div class="igrejas">
+                    <div class="igreja" *ngFor="let igreja of igrejasLambari">
+                        <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                        <p>{{ igreja.nome }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cidade" *ngIf="igrejasJesuania.length > 0">
+                <div class="d-flex gap-2 mb-3">
+                    <i class="mdi mdi-home-city-outline icon-s"></i>
+                    <h2 class="title-city">Jesuânia</h2>
+                </div>
+                <div class="igrejas">
+                    <div class="igreja" *ngFor="let igreja of igrejasJesuania">
+                        <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                        <p>{{ igreja.nome }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cidade" *ngIf="igrejasJesuania.length > 0">
+                <div class="d-flex gap-2 mb-3">
+                    <i class="mdi mdi-home-city-outline icon-s"></i>
+                    <h2 class="title-city">Olímpio de Noronha</h2>
+                </div>
+                <div class="igrejas">
+                    <div class="igreja" *ngFor="let igreja of igrejasOlimpio">
+                        <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                        <p>{{ igreja.nome }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
