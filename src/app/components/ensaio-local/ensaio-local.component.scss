@@ -28,7 +28,21 @@
 }
 
 .cidade {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.btn-collapse {
+    background-color: #eee;
+    padding-left: 16px;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0 !important;
+}
+
+.btn-collapse:hover {
+    background-color: #d1d1d1;
 }
 
 .cidade h2 {
@@ -39,6 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: #ebebeb;
 }
 
 .igreja {
@@ -47,7 +62,6 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #ebebeb;
     border-radius: 16px 16px 0 0;
     padding: 16px;
 }

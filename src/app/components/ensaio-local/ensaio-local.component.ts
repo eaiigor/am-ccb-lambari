@@ -47,4 +47,8 @@ export class EnsaioLocalComponent implements OnInit {
       }
     }
   }
+
+  irParaDetalhes(idLocalidade: number): void {
+    window.location.replace(`/detalhes-localidade/${idLocalidade}`);
+  }
 }
