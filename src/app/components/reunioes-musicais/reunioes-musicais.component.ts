@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ReuniaoMusical } from 'src/app/interfaces/reuniaoMusical.model';
 import { EventoService } from 'src/app/service/eventos.service';
@@ -8,17 +9,24 @@ import { EventoService } from 'src/app/service/eventos.service';
   templateUrl: './reunioes-musicais.component.html',
   styleUrls: ['./reunioes-musicais.component.scss']
 })
-export class ReunioesMusicaisComponent implements OnInit {
+export class ReunioesMusicaisComponent implements OnInit, OnDestroy {
 
   reunioesMusicais: ReuniaoMusical[] = [];
+  responsividade: boolean = true;
+  paddingSize: number = 5;
 
   constructor(
     private eventoService: EventoService,
     private sanitizer: DomSanitizer,
+    private viewportScroller: ViewportScroller
   ) { }
 
   ngOnInit(): void {
     this.carregarEMapearDatas();
+
+    this.checkScreenSize();
+
+    window.addEventListener('resize', this.checkScreenSize);
   }
 
   carregarEMapearDatas(): void {
@@ -30,5 +38,18 @@ export class ReunioesMusicaisComponent implements OnInit {
 
   getSafeTrailerUrl(safeLink: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(safeLink);
+  }
+
+  checkScreenSize = () => {
+    const screenWidth = window.innerWidth;
+
+    this.responsividade =screenWidth >= 1052;
+
+    this.paddingSize = this.responsividade ? 5 : 3;
+  }
+
+  ngOnDestroy(): void {
+    // Remover o listener quando o componente for destruído
+    window.removeEventListener('resize', this.checkScreenSize);
   }
 }
