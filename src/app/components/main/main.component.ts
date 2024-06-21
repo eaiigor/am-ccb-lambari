@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import allLocales from '@fullcalendar/core/locales-all';
@@ -6,21 +6,26 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import { Evento } from 'src/app/interfaces/evento.model';
 import { EventosData } from 'src/app/interfaces/eventosData.model';
 import { EventoService } from 'src/app/service/eventos.service';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, OnDestroy {
 
   calendarOptions: CalendarOptions = {};
   eventos: Evento[] = [];
   eventosData: EventosData[] = [];
   proximosEventos: Evento[] = [];
+  exibirCalendario: boolean = true;
+  paddingSize: number = 5;
+  widthPercentage: number = 30;
 
   constructor(
     private eventoService: EventoService,
+    private viewportScroller: ViewportScroller
   ) { }
   
   ngOnInit(): void {
@@ -33,6 +38,10 @@ export class MainComponent implements OnInit {
     this.proximosEventos = this.getProximosEventos(this.eventos, 5);
 
     this.verificarIdCalendario();
+
+    this.checkScreenSize();
+
+    window.addEventListener('resize', this.checkScreenSize);
   }
 
   carregar(): void {
@@ -109,5 +118,20 @@ export class MainComponent implements OnInit {
         elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
+  }
+
+  ngOnDestroy(): void {
+    // Remover o listener quando o componente for destruído
+    window.removeEventListener('resize', this.checkScreenSize);
+  }
+
+  checkScreenSize = () => {
+    const screenWidth = window.innerWidth;
+    
+    this.exibirCalendario = screenWidth >= 1052;
+
+    this.paddingSize = this.exibirCalendario ? 5 : 2;
+
+    this.widthPercentage = this.exibirCalendario ? 30 : 100;
   }
 }
