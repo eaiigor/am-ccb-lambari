@@ -15,13 +15,9 @@
                     <span class="comunicationo-text">Comunicado importante</span>
                     <hr>
                 </div>
-                <marquee class="marquee-text" scrollamount="12">
+                <marquee class="marquee-text" scrollamount="8">
                     <ng-container *ngFor="let evento of proximosEventos">
-                      {{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <span class="mr-30">{{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr</span>
                     </ng-container>
                   </marquee>
                 <hr>
