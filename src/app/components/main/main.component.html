@@ -1,6 +1,5 @@
 <div [class]="['p-' + paddingSize]">
     <div class="w-100 py-7">
-        
         <div class="d-flex justify-content-center">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="h1-title">Agenda Musical</h1>
@@ -10,24 +9,24 @@
         </div>
 
         <div class="w-100 d-flex justify-content-center pt-5">
-            <div class="marquee-container">
+            <div class="marquee-section">
                 <div class="d-flex align-items-center gap-2">
                     <span class="comunicationo-text">Comunicado importante</span>
                     <hr>
                 </div>
                 <div class="marquee-text">
-                    <ng-container *ngFor="let evento of proximosEventos">
-                        <span class="mr-30">{{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr</span>
-                    </ng-container>
+                    <div class="marquee-content">
+                        <ng-container *ngFor="let evento of proximosEventos">
+                            <span class="mr-30">{{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr</span>
+                        </ng-container>
+                    </div>
                 </div>
                 <hr>
             </div>
         </div>
-
     </div>
 
     <div class="d-flex justify-content-between gap-4">
-
         <div class="d-flex flex-column" [style.width.%]="widthPercentage">
             <h3 class="c-title">Próximos Eventos</h3>
             <div *ngFor="let evento of proximosEventos" class="card card-e mb-4" style="width: 100%;">
@@ -39,20 +38,17 @@
                                 <h6 class="card-subtitle text-body-secondary mb-1">{{ evento.nomeLocalidade }}</h6>
                                 <h6 class="card-subtitle text-body-secondary">{{ evento.encarregadoLocal ?? evento.encarregadoRegional }}</h6>
                             </div>
-    
                             <div class="d-flex flex-column">
                                 <a href="#" class="card-link">Endereço google</a>
                                 <span href="#" class="card-link m-0">{{ evento.dataEvento | date:'EEEE - dd/MM/yyyy HH:mm' }}</span>
                             </div>
                         </div>
-    
                         <div>
                             <img class="image-card" [src]="evento.imgIgreja" [alt]="evento.nomeLocalidade">
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="h-100" style="width: 70%;" id="calendario-musical" [ngClass]="{ 'd-none': !exibirCalendario }">
@@ -67,6 +63,5 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
