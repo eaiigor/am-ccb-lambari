@@ -1,57 +1,55 @@
-<div class="p-out-card">
+<div class="p-out-card container-fluid">
     <div class="card p-card w-100" style="min-height: 46rem;">
-        <div class="mb-5 d-flex gap-2 align-items-center">
-            <img class="adjust-img" src="assets/local-icon.png" alt="local-icon">
-            <h2 class="title-f-card mb-0">Ensaios Locais</h2>
+      <div class="mb-5 d-flex gap-2 align-items-center">
+        <img class="adjust-img" src="assets/local-icon.png" alt="local-icon">
+        <h2 class="title-f-card mb-0">Ensaios Locais</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-12 cidade" *ngIf="igrejasLambari.length > 0">
+          <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseLambari" role="button" aria-expanded="false" aria-controls="collapseLambari">
+            <i class="mdi mdi-city icon-s"></i>
+            <h2 class="title-city">Lambari</h2>
+          </button>
+          <div class="collapse" id="collapseLambari">
+            <div class="igrejas">
+              <div class="igreja" *ngFor="let igreja of igrejasLambari" (click)="irParaDetalhes(igreja.id)">
+                <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                <p>{{ igreja.nome }}</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="row">
-
-            <div class="cidade" *ngIf="igrejasLambari.length > 0">
-                <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseLambari" role="button" aria-expanded="false" aria-controls="collapseLambari">
-                    <i class="mdi mdi-city icon-s"></i>
-                    <h2 class="title-city">Lambari</h2>
-                </button>
-                <div class="collapse" id="collapseLambari">
-                    <div class="igrejas">
-                        <div class="igreja" *ngFor="let igreja of igrejasLambari" (click)="irParaDetalhes(igreja.id)">
-                            <img [src]="igreja.img" alt="{{ igreja.nome }}">
-                            <p>{{ igreja.nome }}</p>
-                        </div>
-                    </div>
-                </div>
+  
+        <div class="col-12 cidade" *ngIf="igrejasJesuania.length > 0">
+          <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseJesuania" role="button" aria-expanded="false" aria-controls="collapseJesuania">
+            <i class="mdi mdi-city-variant icon-s"></i>
+            <h2 class="title-city">Jesuânia</h2>
+          </button>
+          <div class="collapse" id="collapseJesuania">
+            <div class="igrejas">
+              <div class="igreja" *ngFor="let igreja of igrejasJesuania" (click)="irParaDetalhes(igreja.id)">
+                <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                <p>{{ igreja.nome }}</p>
+              </div>
             </div>
-
-            <div class="cidade" *ngIf="igrejasJesuania.length > 0">
-                <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseJesuania" role="button" aria-expanded="false" aria-controls="collapseJesuania">
-                    <i class="mdi mdi-city-variant icon-s"></i>
-                    <h2 class="title-city">Jesuânia</h2>
-                </button>
-                <div class="collapse" id="collapseJesuania">
-                    <div class="igrejas">
-                        <div class="igreja" *ngFor="let igreja of igrejasJesuania" (click)="irParaDetalhes(igreja.id)">
-                            <img [src]="igreja.img" alt="{{ igreja.nome }}">
-                            <p>{{ igreja.nome }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cidade" *ngIf="igrejasOlimpio.length > 0">
-                <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseOlimpio" role="button" aria-expanded="false" aria-controls="collapseOlimpio">
-                    <i class="mdi mdi-home-city icon-s"></i>
-                    <h2 class="title-city">Olímpio de Noronha</h2>
-                </button>
-                <div class="collapse" id="collapseOlimpio">
-                    <div class="igrejas">
-                        <div class="igreja" *ngFor="let igreja of igrejasOlimpio" (click)="irParaDetalhes(igreja.id)">
-                            <img [src]="igreja.img" alt="{{ igreja.nome }}">
-                            <p>{{ igreja.nome }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
+  
+        <div class="col-12 cidade" *ngIf="igrejasOlimpio.length > 0">
+          <button class="d-flex gap-2 mb-3 btn-collapse" data-bs-toggle="collapse" href="#collapseOlimpio" role="button" aria-expanded="false" aria-controls="collapseOlimpio">
+            <i class="mdi mdi-home-city icon-s"></i>
+            <h2 class="title-city">Olímpio de Noronha</h2>
+          </button>
+          <div class="collapse" id="collapseOlimpio">
+            <div class="igrejas">
+              <div class="igreja" *ngFor="let igreja of igrejasOlimpio" (click)="irParaDetalhes(igreja.id)">
+                <img [src]="igreja.img" alt="{{ igreja.nome }}">
+                <p>{{ igreja.nome }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
