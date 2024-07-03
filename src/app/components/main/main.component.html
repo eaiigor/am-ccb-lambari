@@ -10,16 +10,16 @@
         </div>
 
         <div class="w-100 d-flex justify-content-center pt-5">
-            <div class="marquee-section">
+            <div class="marquee-container">
                 <div class="d-flex align-items-center gap-2">
                     <span class="comunicationo-text">Comunicado importante</span>
                     <hr>
                 </div>
-                <marquee class="marquee-text" scrollamount="8">
+                <div class="marquee-text">
                     <ng-container *ngFor="let evento of proximosEventos">
-                      <span class="mr-30">{{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr</span>
+                        <span class="mr-30">{{ evento.nomeEvento }} {{ evento.nomeLocalidade }} - {{ evento.dataEvento | date:'dd/MM/yyyy HH:mm' }}hr</span>
                     </ng-container>
-                  </marquee>
+                </div>
                 <hr>
             </div>
         </div>

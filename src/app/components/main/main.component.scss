@@ -18,11 +18,26 @@
     font-style: italic;
 }
 
-.marquee-section {
+.marquee-container {
     width: 76vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    font-style: italic;
+    font-size: 16px;
+    animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 hr {
@@ -35,11 +50,6 @@ hr {
 .comunicationo-text {
     font-size: 20px;
     font-weight: 600;
-}
-
-.marquee-text {
-    font-style: italic;
-    font-size: 16px;
 }
 
 .image-card {
@@ -105,24 +115,25 @@ hr {
     color: #fff;
 }
 
-::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
     background-color: #c4c4c4;
     border: 2px solid #c4c4c4;
 }
 
-::ng-deep .fc-direction-ltr .fc-button-group > .fc-button:active {
+::ng-deep .fc-direction-ltr .fc-button-group>.fc-button:active {
     background-color: #fff;
     border-color: #e2e2e2;
     color: #c4c4c4;
 }
 
-::ng-deep .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+::ng-deep .fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
     background-color: #fff;
     border: 2px solid #e2e2e2;
     color: #5e5e5e;
 }
 
-::ng-deep .fc-direction-ltr .fc-toolbar > * > :not(:first-child):active {
+::ng-deep .fc-direction-ltr .fc-toolbar>*> :not(:first-child):active {
     background-color: #fff;
     border: 2px solid #e2e2e2;
     color: #5e5e5e;
