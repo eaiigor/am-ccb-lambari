@@ -78,4 +78,8 @@
     .title-details {
         font-size: 1.6rem; /* Ajusta dinamicamente com a largura da viewport */
     }
+
+    .grid-item {
+        width: calc(55% - 25px);
+    }
 }
