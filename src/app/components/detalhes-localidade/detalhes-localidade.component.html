@@ -1,5 +1,5 @@
-<div class="p-out-card">
-    <div class="card p-card w-100" style="min-height: 46rem;">
+<!-- <div class="container" [class]="['p-' + paddingSize]">
+    <div class="card w-100" style="min-height: 46rem;" [class]="['p-' + paddingSize]">
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <img [src]="evento.imgIgreja" [alt]="evento.localidade" class="img-fluid evento-image">
@@ -53,6 +53,65 @@
                 [src]="safeIframerUrl"
                 width="600" height="350" style="border:0; border-radius: 32px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div> -->
+
+<div class="container" [class]="'p-' + paddingSize">
+    <div class="card w-100 p-4" style="min-height: 46rem;">
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+                <img [src]="evento.imgIgreja" [alt]="evento.localidade" class="img-fluid evento-image">
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center align-items-start gap-5">
+                    <div class="bl">
+                        <h1 class="title-details">{{ evento.localidade }}</h1>
+                        <h5 class="sub-title-details">Cidade: {{ evento.cidade }}</h5>
+                    </div>
+
+                    <div>
+                        <div *ngIf="evento.encarregadoLocal">
+                            <i class="mdi mdi-account-tie-outline fs-22"></i><span class="informations"> Encarregado
+                                local: {{ evento.encarregadoLocal }}</span>
+                        </div>
+                        <div>
+                            <i class="mdi mdi-account-tie fs-22"></i><span class="informations"> Encarregado regional:
+                                {{ evento.encarregadoRegional }}</span>
+                        </div>
+                        <div>
+                            <i class="mdi mdi-phone fs-22"></i><span class="informations"> Contato local: {{
+                                evento.contatoLocal }}</span>
+                        </div>
+                        <div>
+                            <i class="mdi mdi-map-marker" style="font-size: 20px;"></i><span class="informations"> Endereço: {{
+                                evento.endereco }}</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span class="informations">{{ evento.diasEmFrase }}</span>
+                        </div>
+
+                        <div class="grid-container mt-3">
+                            <div class="grid-item" *ngFor="let data of evento.diasDeEvento">
+                                <div>{{ data | date:'dd/MM/yyyy HH:mm' }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <iframe [src]="safeIframerUrl" class="iframe-s" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 </div>

@@ -21,10 +21,6 @@ export class EnsaioLocalComponent implements OnInit {
 
   ngOnInit(): void {
     this.carregar();
-
-    console.log(this.igrejasLambari)
-    console.log(this.igrejasJesuania)
-    console.log(this.igrejasOlimpio)
   }
 
   carregar(): void {
