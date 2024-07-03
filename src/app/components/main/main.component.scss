@@ -27,7 +27,7 @@
 .marquee-text {
     font-style: italic;
     font-size: 16px;
-    animation: marquee 28s linear infinite;
+    animation: marquee 32s linear infinite;
 }
 
 @keyframes marquee {
@@ -75,6 +75,15 @@ hr {
 .mr-30 {
     margin-right: 30rem;
 }
+
+@media (max-width: 768px) {
+    .marquee-text {
+        font-style: italic;
+        font-size: 16px;
+        animation: marquee 8s linear infinite;
+    }
+}
+
 
 ::ng-deep .fc-theme-standard .fc-scrollgrid {
     border: none;
