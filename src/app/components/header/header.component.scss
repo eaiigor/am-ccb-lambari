@@ -70,4 +70,10 @@
     .navbar-nav .dropdown-menu {
         position: absolute;
     }
+
+    @media (max-width: 1051px) {
+        .hide-on-smaller-screen {
+            display: none !important;
+        }
+    }
 }
