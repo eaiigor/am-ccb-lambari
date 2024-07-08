@@ -16,6 +16,7 @@ export class DetalhesLocalidadeComponent implements OnInit, OnDestroy {
   safeIframerUrl: SafeResourceUrl | undefined;
   responsividade: boolean = true;
   paddingSize: number = 5;
+  currentDate: Date = new Date();
 
   constructor(
     private route: ActivatedRoute,
@@ -47,6 +48,10 @@ export class DetalhesLocalidadeComponent implements OnInit, OnDestroy {
     this.responsividade =screenWidth >= 1052;
 
     this.paddingSize = this.responsividade ? 5 : 3;
+  }
+
+  parseDate(dateString: string): Date {
+    return new Date(dateString);
   }
 
   ngOnDestroy(): void {

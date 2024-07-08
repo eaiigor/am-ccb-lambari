@@ -14,6 +14,7 @@ export class ReunioesMusicaisComponent implements OnInit, OnDestroy {
   reunioesMusicais: ReuniaoMusical[] = [];
   responsividade: boolean = true;
   paddingSize: number = 5;
+  currentDate: Date = new Date();
 
   constructor(
     private eventoService: EventoService,
@@ -48,8 +49,11 @@ export class ReunioesMusicaisComponent implements OnInit, OnDestroy {
     this.paddingSize = this.responsividade ? 5 : 3;
   }
 
+  parseDate(dateString: string): Date {
+    return new Date(dateString);
+  }
+
   ngOnDestroy(): void {
-    // Remover o listener quando o componente for destruído
     window.removeEventListener('resize', this.checkScreenSize);
   }
 }

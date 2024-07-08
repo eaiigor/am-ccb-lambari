@@ -22,7 +22,7 @@
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="mdi mdi-calendar-range" style="font-size: 20px; margin-right: 2px;"></i>
                             <div class="eventos-container">
-                                <p class="event-text-box mb-0" *ngFor="let data of reuniaoMusical.data">{{ data |
+                                <p class="event-text-box mb-0" [ngClass]="{'evento-passado': parseDate(data) < currentDate}" *ngFor="let data of reuniaoMusical.data">{{ data |
                                     date:'EEEE - dd/MM HH:mm' }}</p>
                             </div>
                         </div>

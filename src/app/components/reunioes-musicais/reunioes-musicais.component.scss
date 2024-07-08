@@ -38,9 +38,12 @@
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 10px;
-  /* Adiciona margem inferior para criar espaçamento entre as linhas */
 }
 
 .event-text-box:hover {
   background-color: #fff;
+}
+
+.evento-passado {
+  opacity: 0.4;
 }
