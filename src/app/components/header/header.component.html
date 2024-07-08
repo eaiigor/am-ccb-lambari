@@ -12,11 +12,11 @@
                         <i class="mdi mdi-calendar-text-outline"></i>Calendário Musical
                     </a>
                 </li>
-                <li class="nav-item cursor-p">
+                <li class="nav-item cursor-p pd-0-14">
                     <a class="nav-link active" (click)="irParaTela('reunioes-musicais')" aria-current="page"><i
                             class="mdi mdi-account-music-outline"></i>Reuniões Musicais</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pd-0-14">
                     <a class="nav-link active cursor-p" (click)="irParaDetalhes(17)" aria-current="page"><img
                             src="assets/regional-icon.png" alt="regional-icon">Ensaio Regional</a>
                 </li>
@@ -29,7 +29,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li style="cursor: pointer;" *ngFor="let localidade of eventosData">
-                            <a class="dropdown-item" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade
+                            <a class="dropdown-item w-80" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade
                                 }}</a>
                         </li>
                     </ul>
