@@ -8,29 +8,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex align-items-left gap-3 me-auto mb-2 mb-lg-0">
                 <li class="nav-item hide-on-smaller-screen">
-                    <a class="nav-link active" (click)="irParaCalendarioMusical()" href="#calendario-musical">
+                    <a class="nav-link active" (click)="irParaCalendarioMusical(); fecharMenu()" href="#calendario-musical">
                         <i class="mdi mdi-calendar-text-outline"></i>Calendário Musical
                     </a>
                 </li>
                 <li class="nav-item cursor-p pd-0-14">
-                    <a class="nav-link active" (click)="irParaTela('reunioes-musicais')" aria-current="page"><i
-                            class="mdi mdi-account-music-outline"></i>Reuniões Musicais</a>
+                    <a class="nav-link active" (click)="irParaTela('reunioes-musicais'); fecharMenu()" aria-current="page">
+                        <i class="mdi mdi-account-music-outline"></i>Reuniões Musicais
+                    </a>
                 </li>
                 <li class="nav-item pd-0-14">
-                    <a class="nav-link active cursor-p" (click)="irParaDetalhes(17)" aria-current="page"><img
-                            src="assets/regional-icon.png" alt="regional-icon">Ensaio Regional</a>
+                    <a class="nav-link active cursor-p" (click)="irParaDetalhes(17); fecharMenu()" aria-current="page">
+                        <img src="assets/regional-icon.png" alt="regional-icon">Ensaio Regional
+                    </a>
                 </li>
                 <li class="nav-item btn-group">
-                    <a type="button" class="btn btn-light" (click)="irParaTela('ensaio-local')"><img
-                            src="assets/local-icon.png" alt="local-icon">Ensaio Local</a>
+                    <a type="button" class="btn btn-light" (click)="irParaTela('ensaio-local'); fecharMenu()">
+                        <img src="assets/local-icon.png" alt="local-icon">Ensaio Local
+                    </a>
                     <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu">
                         <li style="cursor: pointer;" *ngFor="let localidade of eventosData">
-                            <a class="dropdown-item w-80" (click)="irParaDetalhes(localidade.id)">{{ localidade.localidade
-                                }}</a>
+                            <a class="dropdown-item w-80" (click)="irParaDetalhes(localidade.id); fecharMenu()">{{ localidade.localidade }}</a>
                         </li>
                     </ul>
                 </li>

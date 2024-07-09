@@ -26,7 +26,6 @@ export class HeaderComponent implements OnInit {
   }
 
   irParaDetalhes(idLocalidade: number): void {
-
     window.location.replace(`/detalhes-localidade/${idLocalidade}`);
   }
 
@@ -38,6 +37,15 @@ export class HeaderComponent implements OnInit {
     const elemento = document.getElementById('calendario-musical');
     if (elemento) {
       elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  fecharMenu(): void {
+    const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
+    const navbarSupportedContent = document.querySelector('#navbarSupportedContent') as HTMLElement;
+
+    if (navbarToggler && navbarSupportedContent.classList.contains('show')) {
+      navbarToggler.click();
     }
   }
 }
