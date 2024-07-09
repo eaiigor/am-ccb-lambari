@@ -2,43 +2,43 @@
     <div class="card w-100 p-4" style="min-height: 46rem;">
         <div class="row mb-5">
             <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
-                <img [src]="evento.imgIgreja" [alt]="evento.localidade" class="img-fluid evento-image">
+                <img [src]="evento?.imgIgreja" [alt]="evento?.localidade" class="img-fluid evento-image">
             </div>
 
             <div class="col-12 col-md-6 d-flex justify-content-center">
                 <div class="d-flex flex-column justify-content-center align-items-start gap-5">
                     <div class="bl">
-                        <h1 class="title-details">{{ evento.localidade }}</h1>
-                        <h5 class="sub-title-details">Cidade: {{ evento.cidade }}</h5>
+                        <h1 class="title-details">{{ evento?.localidade }}</h1>
+                        <h5 class="sub-title-details">Cidade: {{ evento?.cidade }}</h5>
                     </div>
 
                     <div>
-                        <div *ngIf="evento.encarregadoLocal">
+                        <div *ngIf="evento?.encarregadoLocal">
                             <i class="mdi mdi-account-tie-outline fs-22"></i><span class="informations"> Encarregado
-                                local: {{ evento.encarregadoLocal }}</span>
+                                local: {{ evento?.encarregadoLocal }}</span>
                         </div>
                         <div>
                             <i class="mdi mdi-account-tie fs-22"></i><span class="informations"> Encarregado regional:
-                                {{ evento.encarregadoRegional }}</span>
+                                {{ evento?.encarregadoRegional }}</span>
                         </div>
                         <div>
                             <i class="mdi mdi-phone fs-22"></i><span class="informations"> Contato local: {{
-                                evento.contatoLocal }}</span>
+                                evento?.contatoLocal }}</span>
                         </div>
                         <div>
                             <i class="mdi mdi-map-marker" style="font-size: 20px;"></i><span class="informations">
                                 Endereço: {{
-                                evento.endereco }}</span>
+                                evento?.endereco }}</span>
                         </div>
                     </div>
 
                     <div>
                         <div>
-                            <span class="informations">{{ evento.diasEmFrase }}</span>
+                            <span class="informations">{{ evento?.diasEmFrase }}</span>
                         </div>
 
                         <div class="grid-container mt-3">
-                            <div class="grid-item" *ngFor="let data of evento.diasDeEvento"
+                            <div class="grid-item" *ngFor="let data of evento?.diasDeEvento"
                                 [ngClass]="{'evento-passado': parseDate(data) < currentDate}">
                                 <div>{{ data | date:'dd/MM/yyyy HH:mm' }}</div>
                             </div>

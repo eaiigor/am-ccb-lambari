@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { EventosData } from 'src/app/interfaces/eventosData.model';
 import { EventoService } from 'src/app/service/eventos.service';
 
@@ -14,11 +14,18 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private activatedRoute: ActivatedRoute,
     private eventoService: EventoService,
   ) { }
 
   ngOnInit(): void {
     this.carregar();
+    this.activatedRoute.params.subscribe(params => {
+      const id = params['id'];
+      if (id) {
+        this.irParaDetalhes(id);
+      }
+    });
   }
 
   carregar(): void {
@@ -26,7 +33,7 @@ export class HeaderComponent implements OnInit {
   }
 
   irParaDetalhes(idLocalidade: number): void {
-    window.location.replace(`/detalhes-localidade/${idLocalidade}`);
+    this.router.navigate([`/detalhes-localidade/${idLocalidade}`]);
   }
 
   irParaTela(rota: string): void {

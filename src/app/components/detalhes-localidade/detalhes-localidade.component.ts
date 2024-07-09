@@ -1,9 +1,8 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Evento } from 'src/app/interfaces/evento.model';
-import { EventosData } from 'src/app/interfaces/eventosData.model';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { EventoService } from 'src/app/service/eventos.service';
+import { EventosData } from 'src/app/interfaces/eventosData.model';
 
 @Component({
   selector: 'app-detalhes-localidade',
@@ -12,10 +11,10 @@ import { EventoService } from 'src/app/service/eventos.service';
 })
 export class DetalhesLocalidadeComponent implements OnInit, OnDestroy {
 
-  evento!: EventosData
+  evento: EventosData | undefined;
   safeIframerUrl: SafeResourceUrl | undefined;
-  responsividade: boolean = true;
-  paddingSize: number = 5;
+  responsividade: boolean = false;
+  paddingSize: number = 3;
   currentDate: Date = new Date();
 
   constructor(
@@ -25,16 +24,15 @@ export class DetalhesLocalidadeComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    const idEvento = this.route.snapshot.paramMap.get('id');
-
-    if (idEvento) {
-      this.evento = this.eventoService.receberEventoPorId(parseInt(idEvento, 10));
-    }
-
-    this.safeIframerUrl = this.getSafeTrailerUrl(this.evento?.iframeMaps || '');
+    this.route.params.subscribe(params => {
+      const idEvento = params['id'];
+      if (idEvento) {
+        this.evento = this.eventoService.receberEventoPorId(parseInt(idEvento, 10));
+        this.safeIframerUrl = this.getSafeTrailerUrl(this.evento?.iframeMaps || '');
+      }
+    });
 
     this.checkScreenSize();
-
     window.addEventListener('resize', this.checkScreenSize);
   }
 
@@ -44,9 +42,7 @@ export class DetalhesLocalidadeComponent implements OnInit, OnDestroy {
 
   checkScreenSize = () => {
     const screenWidth = window.innerWidth;
-
-    this.responsividade =screenWidth >= 1052;
-
+    this.responsividade = screenWidth >= 1052;
     this.paddingSize = this.responsividade ? 5 : 3;
   }
 
