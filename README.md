@@ -1,27 +1,31 @@
-# AmCcbLambari
+# Agenda Musical Lambari
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Uma agenda digital para eventos musicais das CCB's do setor Lambari-MG.
 
-## Development server
+Este projeto foi desenvolvido utilizando Angular 16 e Bootstrap para a interface gráfica.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A aplicação está hospedada e pode ser acessada em: [https://am-ccb-lambari.vercel.app/](https://am-ccb-lambari.vercel.app/)
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Listagem de eventos musicais das CCB's do setor Lambari-MG.
+- Detalhes de cada evento, incluindo data, horário, local e informações adicionais.
+- Interface responsiva, desenvolvida com Bootstrap para facilitar o uso em dispositivos móveis e desktops.
+- Busca por eventos.
+- Filtros para categorização dos eventos.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular 16** - Framework para construção de aplicações web.
+- **Bootstrap** - Framework front-end para desenvolvimento de interfaces responsivas.
+- **npm** - Gerenciador de pacotes para JavaScript.
 
-## Running unit tests
+## Instalação Local
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para rodar o projeto localmente, siga os passos abaixo:
 
-## Running end-to-end tests
+1. **Clonar o repositório: git clone https://github.com/seu_usuario/nome_do_repositorio.git**
+2. **Instalar as dependências: cd nome_do_repositorio - npm install**
+3. **Rodar a aplicação: npm start**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse `http://localhost:4200` para visualizar a aplicação no seu navegador.
