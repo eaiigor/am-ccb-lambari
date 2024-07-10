@@ -24,8 +24,8 @@ A aplicação está hospedada e pode ser acessada em: [https://am-ccb-lambari.ve
 
 Para rodar o projeto localmente, siga os passos abaixo:
 
-1. **Clonar o repositório: git clone https://github.com/seu_usuario/nome_do_repositorio.git**
-2. **Instalar as dependências: cd nome_do_repositorio - npm install**
+1. **Clonar o repositório: git clone https://github.com/seu_usuario/am-ccb-lambari.git**
+2. **Instalar as dependências: cd am-ccb-lambari - npm install**
 3. **Rodar a aplicação: npm start**
 
 Acesse `http://localhost:4200` para visualizar a aplicação no seu navegador.
