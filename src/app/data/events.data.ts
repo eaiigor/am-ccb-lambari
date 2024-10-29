@@ -8,12 +8,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/alto-do-boa-vista.jpg",
         diasDeEvento: [
-            "2024-01-08T19:30:00",
-            "2024-03-12T19:30:00",
-            "2024-05-13T19:30:00",
-            "2024-07-08T19:30:00",
-            "2024-09-09T19:30:00",
-            "2024-11-11T19:30:00"
+            "2024-11-11T19:30:00",
+            "2025-01-13T19:30:00",
+            "2025-03-10T19:30:00",
+            "2025-05-12T19:30:00",
+            "2025-07-14T19:30:00",
+            "2025-09-08T19:30:00",
+            "2025-11-10T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 2° Segunda dos meses ímpares as 19:30",
         cidade: "Lambari",
@@ -28,9 +29,9 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/barrocada.jpg",
         diasDeEvento: [
-            "2024-03-16T19:30:00",
-            "2024-06-21T19:30:00",
-            "2024-09-20T19:30:00"
+            "2025-03-21T19:30:00",
+            "2025-06-20T19:30:00",
+            "2025-09-19T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Mar/Jun/Set as 19:30",
         cidade: "Jesuânia",
@@ -46,12 +47,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/campo-belo.jpg",
         diasDeEvento: [
-            "2024-01-15T19:30:00",
-            "2024-03-18T19:30:00",
-            "2024-05-20T19:30:00",
-            "2024-07-15T19:30:00",
-            "2024-09-16T19:30:00",
-            "2024-11-18T19:30:00"
+            "2024-11-18T19:30:00",
+            "2025-01-20T19:30:00",
+            "2025-03-17T19:30:00",
+            "2025-05-19T19:30:00",
+            "2025-07-21T19:30:00",
+            "2025-09-15T19:30:00",
+            "2025-11-17T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 3° Segunda dos meses ímpares as 19:30",
         cidade: "Lambari",
@@ -67,12 +69,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-jesuania.jpg",
         diasDeEvento: [
-            "2024-02-19T19:30:00",
-            "2024-06-17T19:30:00",
-            "2024-08-19T19:30:00",
-            "2024-12-16T19:30:00"
+            "2024-12-16T19:30:00",
+            "2025-01-27T19:30:00",
+            "2025-03-24T19:30:00",
+            "2025-07-28T19:30:00",
+            "2025-12-29T19:30:00"
         ],
-        diasEmFrase: "Dias de ensaio: 3° Segunda dos meses Fev/Jun/Ago/Dez as 19:30",
+        diasEmFrase: "Dias de ensaio: 4° Segunda dos meses Jan/Mar/Jul/Dez as 19:30",
         cidade: "Jesuânia",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.7957894666433!2d-45.29208127868539!3d-21.99876923609462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb3d5a6273a30b%3A0x5f1c1516b73c4011!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Jesu%C3%A2nia%20(Central)!5e0!3m2!1spt-BR!2sus!4v1712848218416!5m2!1spt-BR!2sus",
         endereco: "R. Sebastião Brandão dos Réis, 371-431, Jesuânia - MG, 37485-000, Brasil"
@@ -86,14 +89,14 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-lambari.jpg",
         diasDeEvento: [
-            "2024-01-27T17:00:00",
-            "2024-03-23T17:00:00",
-            "2024-05-25T17:00:00",
-            "2024-07-27T17:00:00",
-            "2024-09-28T17:00:00",
-            "2024-11-23T17:00:00"
+            "2025-02-17T19:30:00",
+            "2025-04-21T19:30:00",
+            "2025-06-16T19:30:00",
+            "2025-08-18T19:30:00",
+            "2025-10-20T19:30:00",
+            "2025-12-15T19:30:00"
         ],
-        diasEmFrase: "Dias de ensaio: 4° Sábados meses impar as 17:00",
+        diasEmFrase: "Dias de ensaio: 3° Segunda dos meses pares as 19:30",
         cidade: "Lambari",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3699.7132197480837!2d-45.340406!3d-21.983967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb19b5a2de4b15%3A0xee221907c3ef6766!2sAv.%20Get%C3%BAlio%20Vargas%2C%201083%2C%20Lambari%20-%20MG%2C%2037480-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1712848662969!5m2!1spt-BR!2sus",
         endereco: "Av. Getúlio Vargas, 1083, Lambari - MG, 37480-000, Brasil"
@@ -107,12 +110,12 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/olimpo.jpg",
         diasDeEvento: [
-            "2024-01-23T19:30:00",
-            "2024-03-25T19:30:00",
-            "2024-07-22T19:30:00",
-            "2024-11-25T19:30:00"
+            "2024-11-25T19:30:00",
+            "2025-05-26T19:30:00",
+            "2025-09-22T19:30:00",
+            "2025-11-24T19:30:00"
         ],
-        diasEmFrase: "Dias de ensaio: 4° segunda-feira dos meses Jan/Mar/Jul/Nov 19:30",
+        diasEmFrase: "Dias de ensaio: 4° Segunda dos meses Mai/Set/Nov as 19:30",
         cidade: "Olímpo de Noronha",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d696.9596691485042!2d-45.26142567865075!3d-22.068277756400068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb3e8a72ca1b8d%3A0x8f3a87f2a08a1734!2sR.%20Pres.%20Get%C3%BAlio%20Vargas%2C%20222%2C%20Ol%C3%ADmpio%20Noronha%20-%20MG%2C%2037488-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1712849332941!5m2!1spt-BR!2sus",
         endereco: "R. Pres. Getúlio Vargas, 222, Olímpio Noronha - MG, 37488-000, Brasil"
@@ -126,12 +129,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/corte-de-pedra.jpg",
         diasDeEvento: [
-            "2024-02-05T19:30:00",
-            "2024-04-01T19:30:00",
-            "2024-06-03T19:30:00",
-            "2024-08-05T19:30:00",
-            "2024-10-07T19:30:00",
-            "2024-12-02T19:30:00"
+            "2024-12-02T19:30:00",
+            "2025-02-03T19:30:00",
+            "2025-04-07T19:30:00",
+            "2025-06-02T19:30:00",
+            "2025-08-04T19:30:00",
+            "2025-10-06T19:30:00",
+            "2025-12-01T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 1° Segundas-feiras dos meses pares as 19:30",
         cidade: "Lambari",
@@ -147,12 +151,14 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/nova-baden.jpg",
         diasDeEvento: [
-            "2024-01-07T16:00:00",
-            "2024-03-03T16:00:00",
-            "2024-05-05T16:00:00",
-            "2024-07-07T16:00:00",
-            "2024-09-01T16:00:00",
-            "2024-11-03T16:00:00"
+            "2024-11-03T16:00:00",
+            "2025-01-05T16:00:00",
+            "2025-03-02T16:00:00",
+            "2025-05-04T16:00:00",
+            "2025-07-06T16:00:00",
+            "2025-09-07T16:00:00",
+            "2025-11-02T16:00:00"
+        
         ],
         diasEmFrase: "Dias de ensaio: 1° Domingo dos meses ímpares as 16:00",
         cidade: "Lambari",
@@ -168,12 +174,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/recanto-da-serra.jpg",
         diasDeEvento: [
-            "2024-01-14T16:00:00",
-            "2024-03-10T16:00:00",
-            "2024-05-12T16:00:00",
-            "2024-07-14T16:00:00",
-            "2024-09-08T16:00:00",
-            "2024-11-10T16:00:00"
+            "2024-11-10T16:00:00",
+            "2025-01-12T16:00:00",
+            "2025-03-09T16:00:00",
+            "2025-05-11T16:00:00",
+            "2025-07-13T16:00:00",
+            "2025-09-14T16:00:00",
+            "2025-11-09T16:00:00"
         ],
         diasEmFrase: "Dias de ensaio: 2° Domingo dos meses ímpares as 16:00",
         cidade: "Lambari",
@@ -188,10 +195,11 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/sao-geraldo.jpg",
         diasDeEvento: [
-            "2024-02-16T19:30:00",
-            "2024-10-18T19:30:00"
+            "2025-01-17T19:30:00",
+            "2025-05-16T19:30:00",
+            "2025-10-17T19:30:00"
         ],
-        diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Fev/Out as 19:30",
+        diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Jan/Mai/Out as 19:30",
         cidade: "Jesuânia",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.3840399860723!2d-45.28546290926174!3d-22.00555609427466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb3d9639de6e7d%3A0x6133e1cd52443426!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20S%C3%A3o%20Geraldo!5e0!3m2!1spt-BR!2sus!4v1712857540080!5m2!1spt-BR!2sus",
         endereco: "R. José Augusto Ribeiro, 1220, Jesuânia - MG, 37485-000, Brasil"
@@ -205,12 +213,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/serrote.jpg",
         diasDeEvento: [
-            "2024-02-04T16:00:00",
-            "2024-04-07T16:00:00",
-            "2024-06-02T16:00:00",
-            "2024-08-04T16:00:00",
-            "2024-10-06T16:00:00",
-            "2024-12-01T16:00:00"
+            "2024-12-01T16:00:00",
+            "2025-02-02T16:00:00",
+            "2025-04-06T16:00:00",
+            "2025-06-01T16:00:00",
+            "2025-08-03T16:00:00",
+            "2025-10-05T16:00:00",
+            "2025-12-07T16:00:00"
         ],
         diasEmFrase: "Dias de ensaio: 1° Domingo dos meses pares as 16:00",
         cidade: "Lambari",
@@ -226,11 +235,10 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/piripal.jpg",
         diasDeEvento: [
-            "2024-01-29T19:30:00",
-            "2024-04-29T19:30:00",
-            "2024-07-29T19:30:00",
-            "2024-09-30T19:30:00",
-            "2024-12-30T19:30:00"
+            "2024-12-30T19:30:00",
+            "2025-03-31T19:30:00",
+            "2025-06-30T19:30:00",
+            "2025-09-29T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: Toda 5° segunda-feira as 19:30",
         cidade: "Lambari",
@@ -246,9 +254,9 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/tres-barras.jpg",
         diasDeEvento: [
-            "2024-01-21T16:00:00",
-            "2024-05-19T16:00:00",
-            "2024-09-15T16:00:00"
+            "2025-01-19T16:00:00",
+            "2025-05-18T16:00:00",
+            "2025-09-21T16:00:00"
         ],
         diasEmFrase: "Dias de ensaio: 3° Domingo dos meses Jan/Mai/Set 16:00",
         cidade: "Lambari",
@@ -263,12 +271,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/sobralada.jpg",
         diasDeEvento: [
-            "2024-02-26T19:30:00",
-            "2024-04-22T19:30:00",
-            "2024-06-24T19:30:00",
-            "2024-08-26T19:30:00",
-            "2024-10-28T19:30:00",
-            "2024-12-23T19:30:00"
+            "2024-12-23T19:30:00",
+            "2025-02-24T19:30:00",
+            "2025-04-28T19:30:00",
+            "2025-06-23T19:30:00",
+            "2025-08-25T19:30:00",
+            "2025-10-27T19:30:00",
+            "2025-12-22T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 4° Segunda dos meses pares as 19:30",
         cidade: "Lambari",
@@ -284,12 +293,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/vale-do-sol.jpg",
         diasDeEvento: [
-            "2024-02-12T19:30:00",
-            "2024-04-08T19:30:00",
-            "2024-06-10T19:30:00",
-            "2024-08-12T19:30:00",
-            "2024-10-14T19:30:00",
-            "2024-12-09T19:30:00"
+            "2024-12-09T19:30:00",
+            "2025-02-10T19:30:00",
+            "2025-04-14T19:30:00",
+            "2025-06-09T19:30:00",
+            "2025-08-11T19:30:00",
+            "2025-10-13T19:30:00",
+            "2025-12-08T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 2° Segunda dos meses pares as 19:30",
         cidade: "Lambari",
@@ -305,12 +315,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/vista-verde-ii.jpg",
         diasDeEvento: [
-            "2024-01-01T19:30:00",
-            "2024-03-04T19:30:00",
-            "2024-05-06T19:30:00",
-            "2024-07-01T19:30:00",
-            "2024-09-02T19:30:00",
-            "2024-11-04T19:30:00"
+            "2024-11-04T19:30:00",
+            "2025-01-06T19:30:00",
+            "2025-03-03T19:30:00",
+            "2025-05-05T19:30:00",
+            "2025-07-07T19:30:00",
+            "2025-09-01T19:30:00",
+            "2025-11-03T19:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 1° Segunda dos meses ímpares as 19:30",
         cidade: "Lambari",
@@ -325,8 +336,9 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-lambari.jpg",
         diasDeEvento: [
-            "2024-05-26T09:30:00",
-            "2024-11-24T09:30:00"
+            "2024-11-24T09:30:00",
+            "2025-05-25T09:30:00",
+            "2025-11-23T09:30:00"
         ],
         diasEmFrase: "Dias de ensaio: 4° Domingos dos meses de Maio e Novembro as 09:30",
         cidade: "Lambari",
