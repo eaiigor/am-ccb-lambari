@@ -84,8 +84,7 @@ export const eventsData = [
         id: 5,
         nome: "Ensaio Local",
         localidade: "Bosque do Lago - Central",
-        encarregadoLocal: "Fabiano Ribeiro da Silva",
-        contatoLocal: "(35) 9 8402-7157",
+        contatoLocal: "(35) 9 9142-4590",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-lambari.jpg",
         diasDeEvento: [
@@ -106,7 +105,7 @@ export const eventsData = [
         nome: "Ensaio Local",
         localidade: "Central Olímpio de Noronha",
         encarregadoLocal: "Edmilson Pereira",
-        contatoLocal: "(35) 9 9924-0678",
+        contatoLocal: "(35) 9 9242-0678",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/olimpo.jpg",
         diasDeEvento: [
