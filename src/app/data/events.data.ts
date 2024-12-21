@@ -350,7 +350,6 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-lambari.jpg",
         diasDeEvento: [
-            "2024-11-24T09:30:00",
             "2025-05-25T09:30:00",
             "2025-11-23T09:30:00"
         ],
