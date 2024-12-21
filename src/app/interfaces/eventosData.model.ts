@@ -10,5 +10,6 @@ export interface EventosData {
     diasEmFrase: string,
     cidade: string,
     iframeMaps: string,
-    endereco: string
+    endereco: string,
+    tipoEvento: number
 }

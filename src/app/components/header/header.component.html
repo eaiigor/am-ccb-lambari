@@ -32,7 +32,12 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li style="cursor: pointer;" *ngFor="let localidade of eventosData">
-                            <a class="dropdown-item w-80" (click)="irParaDetalhes(localidade.id); fecharMenu()">{{ localidade.localidade }}</a>
+                            <a 
+                                class="dropdown-item w-80" 
+                                *ngIf="localidade.tipoEvento !== 2" 
+                                (click)="irParaDetalhes(localidade.id); fecharMenu()">
+                                {{ localidade.localidade }}
+                            </a>
                         </li>
                     </ul>
                 </li>
