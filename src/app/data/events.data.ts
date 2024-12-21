@@ -69,7 +69,6 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/central-jesuania.jpg",
         diasDeEvento: [
-            "2024-12-16T19:30:00",
             "2025-01-27T19:30:00",
             "2025-03-24T19:30:00",
             "2025-07-28T19:30:00",
