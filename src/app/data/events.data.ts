@@ -240,11 +240,10 @@ export const eventsData = [
         nome: "Ensaio Local",
         localidade: "Sítio Piripal",
         encarregadoLocal: "Wagner Luiz Eugenio",
-        contatoLocal: "(35) 9 2001-8099",
+        contatoLocal: "(35) 9 9857-5170",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/piripal.jpg",
         diasDeEvento: [
-            "2024-12-30T19:30:00",
             "2025-03-31T19:30:00",
             "2025-06-30T19:30:00",
             "2025-09-29T19:30:00"
