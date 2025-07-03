@@ -6,13 +6,13 @@ export const localidades = [
         idCidade: 1,
         img: "assets/igrejas/alto-do-boa-vista.jpg"
     },
-    {
-        id: 2,
-        nome: "Barrocada",
-        cidade: "Jesuânia",
-        idCidade: 2,
-        img: "assets/igrejas/barrocada.jpg"
-    },
+    // {
+    //     id: 2,
+    //     nome: "Barrocada",
+    //     cidade: "Jesuânia",
+    //     idCidade: 2,
+    //     img: "assets/igrejas/barrocada.jpg"
+    // },
     {
         id: 3,
         nome: "Campo Belo",

@@ -22,24 +22,24 @@ export const eventsData = [
         endereco: "R. Joaquim da Costa Cruz, 100 - Lambari",
         tipoEvento: 1
     },
-    {
-        id: 2,
-        nome: "Ensaio Local",
-        localidade: "Barrocada",
-        encarregadoLocal: "UILTON LEMES",
-        contatoLocal: "(35) 9 92002-4362",
-        encarregadoRegional: "Rodrigo Lemes",
-        imgIgreja:"assets/igrejas/barrocada.jpg",
-        diasDeEvento: [
-            "2025-06-20T19:30:00",
-            "2025-10-17T19:30:00"
-        ],
-        diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Jun/Out as 19:30",
-        cidade: "Jesuânia",
-        iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3700.260161405439!2d-45.25649!3d-21.962976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb237fcf9db2a1%3A0xa4cd485ff7704b59!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Barrocada!5e0!3m2!1spt-BR!2sus!4v1712847944970!5m2!1spt-BR!2sus",
-        endereco: "Barrocada, Jesuânia - MG, 37485-000, Brasil",
-        tipoEvento: 1
-    },
+    // {
+    //     id: 2,
+    //     nome: "Ensaio Local",
+    //     localidade: "Barrocada",
+    //     encarregadoLocal: "UILTON LEMES",
+    //     contatoLocal: "(35) 9 92002-4362",
+    //     encarregadoRegional: "Rodrigo Lemes",
+    //     imgIgreja:"assets/igrejas/barrocada.jpg",
+    //     diasDeEvento: [
+    //         "2025-06-20T19:30:00",
+    //         "2025-10-17T19:30:00"
+    //     ],
+    //     diasEmFrase: "Dias de ensaio: 3° sexta-feira dos meses Jun/Out as 19:30",
+    //     cidade: "Jesuânia",
+    //     iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3700.260161405439!2d-45.25649!3d-21.962976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb237fcf9db2a1%3A0xa4cd485ff7704b59!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Barrocada!5e0!3m2!1spt-BR!2sus!4v1712847944970!5m2!1spt-BR!2sus",
+    //     endereco: "Barrocada, Jesuânia - MG, 37485-000, Brasil",
+    //     tipoEvento: 1
+    // },
     {
         id: 3,
         nome: "Ensaio Local",
