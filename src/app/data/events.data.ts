@@ -176,8 +176,8 @@ export const eventsData = [
         id: 9,
         nome: "Ensaio Local",
         localidade: "Recanto da Serra",
-        encarregadoLocal: "Gabriel Gomes de Lima",
-        contatoLocal: "(35) 9 9925-4844",
+        //encarregadoLocal: "Gabriel Gomes de Lima",
+        contatoLocal: "(35) 9 9142-4590",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/recanto-da-serra.jpg",
         diasDeEvento: [
