@@ -250,12 +250,11 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/tres-barras.jpg",
         diasDeEvento: [
-            "2025-10-03T19:30:00",
-            "2026-02-02T19:30:00",
-            "2026-06-05T19:30:00",
-            "2026-10-02T19:30:00"
+            "2026-02-08T16:00:00",
+            "2026-06-14T16:00:00",
+            "2026-10-11T16:00:00"
         ],
-        diasEmFrase: "1º sexta-feira de out/fev/jun às 19:30",
+        diasEmFrase: "2° domingo de fev/jun/out às 16:00",
         cidade: "Lambari",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.946494195825!2d-45.404042575872026!3d-22.013361027893286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb1b5ce7ec8763%3A0xd55304c6315e5d8b!2zQ29uZ3JlZ2HDp8OjbyBDcmlzdMOjIG5vIEJyYXNpbCAtIFPDrXRpbyBUcsOqcyBCYXJyYXM!5e0!3m2!1spt-BR!2sus!4v1712859364480!5m2!1spt-BR!2sus",
         endereco: "Três Barras - Lambari - MG, 37480-000, Brasil",
