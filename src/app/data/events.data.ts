@@ -245,8 +245,8 @@ export const eventsData = [
         id: 13,
         nome: "Ensaio Local",
         localidade: "Sítio Três Barras",
-        encarregadoLocal: "Luciano da Silva Lopes",
-        contatoLocal: "(35) 9 9749-0012",
+        //encarregadoLocal: "Luciano da Silva Lopes",
+        contatoLocal: "(35) 9 9142-4590",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/tres-barras.jpg",
         diasDeEvento: [
