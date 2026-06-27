@@ -208,13 +208,13 @@ export const eventsData = [
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/serrote.jpg",
         diasDeEvento: [
-            "2025-10-05T16:00:00",
-            "2026-01-26T16:00:00",
-            "2026-04-27T16:00:00",
-            "2026-07-27T16:00:00",
-            "2026-10-26T16:00:00"
+            "2025-10-05T19:30:00",
+            "2026-01-26T19:30:00",
+            "2026-04-27T19:30:00",
+            "2026-07-27T19:30:00",
+            "2026-10-26T19:30:00"
         ],
-        diasEmFrase: "4º segunda-feira de out/jan/abr/jul às 16:00",
+        diasEmFrase: "4º segunda-feira de out/jan/abr/jul às 19:30",
         cidade: "Lambari",
         iframeMaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6557.392868818468!2d-45.324857459665466!3d-21.974956330420838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb19b975c0334b%3A0xb06bcd67c8bb0958!2sCongrega%C3%A7%C3%A3o%20Crist%C3%A3%20no%20Brasil%20-%20Serrote!5e0!3m2!1spt-BR!2sus!4v1712857992956!5m2!1spt-BR!2sus",
         endereco: "Serrote - Lambari - MG, 37480-000, Brasil",
