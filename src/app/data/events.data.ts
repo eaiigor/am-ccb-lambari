@@ -144,8 +144,8 @@ export const eventsData = [
         id: 8,
         nome: "Ensaio Local",
         localidade: "Nova Baden",
-        encarregadoLocal: "Igor Henrique Oliveira Dias",
-        contatoLocal: "(35) 9 9986-4520",
+        encarregadoLocal: "Cristian Breno da Silva Mota",
+        contatoLocal: "(35) 9 9727-2832",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/nova-baden.jpg",
         diasDeEvento: [
@@ -245,8 +245,8 @@ export const eventsData = [
         id: 13,
         nome: "Ensaio Local",
         localidade: "Sítio Três Barras",
-        //encarregadoLocal: "Luciano da Silva Lopes",
-        contatoLocal: "(35) 9 9142-4590",
+        encarregadoLocal: "Romildo Francisco",
+        contatoLocal: "(35) 9 9952-1936",
         encarregadoRegional: "Rodrigo Lemes",
         imgIgreja:"assets/igrejas/tres-barras.jpg",
         diasDeEvento: [
